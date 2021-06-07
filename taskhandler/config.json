@@ -1,0 +1,19 @@
+
+{
+  "params" : { "localhost_uri": "mysql://root:@localhost/blog",
+    "local_host": "True",
+    "gmail-user": "aryanjainak@gmail.com",
+    "gmail-pass": "puspa456",
+    "admin-user1": "aryanjainak",
+    "admin-pass1": "--------",
+    "admin-user2": "aryanjainak",
+    "admin-pass2": "------",
+    "admin-user3": "aryanjainak",
+    "admin-pass3": "-----",
+    "admin-user4": "aryanjainak",
+    "admin-pass4": "----",
+    "admin-user5": "aryanjainak",
+    "admin-pass5": "---"
+  }
+
+}

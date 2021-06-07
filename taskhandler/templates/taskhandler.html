@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>TaskHandler</title>
+</head>
+<body>
+    
+ <!-- Main Content -->
+ <table class="table">
+    <thead>
+      <tr>
+        <th>Sno</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Phone</th>
+        <th>Image_File</th>
+        <th>DateTime</th>
+      </tr>
+    </thead>
+ <tbody>
+
+
+    {% for p1 in report%}
+      <tr>
+        <td>{{p1.sno}}</td>
+        <td>{{p1.title}}</td>
+        <td>{{p1.content}}</td>
+        <td>{{p1.phone}}</td>
+        <td> <a href="/edit/{{p1.sno}}">  <button type="submit" class="btn btn-primary"> Edit  </button> </a> </td>
+        <td> <a href="/delete/{{p1.sno}}">  <button type="submit" class="btn btn-primary"> Delete </button> </a> </td>
+        <br>
+      </tr>
+<hr>
+
+      {% endfor %}
+    </tbody>
+  </table>
+  
+</body>
+</html>
